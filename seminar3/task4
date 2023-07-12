@@ -1,0 +1,33 @@
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Амиго очень умный");
+    }
+}
+public void fillCatalog(List<ArrayList<String>> catalog) {
+    // Жанры книг
+    ArrayList<String> genre1 = new ArrayList<>();
+    genre1.add("Фантастика");
+    genre1.add("Проза");
+    genre1.add("Поэзия");
+    // Добавляем жанр в каталог
+    catalog.add(genre1);
+    
+    ArrayList<String> genre2 = new ArrayList<>();
+    genre2.add("Детектив");
+    genre2.add("Книга 3");
+    genre2.add("Книга 4");
+    // Добавляем жанр в каталог
+    catalog.add(genre2);
+    
+    // Добавьте код для заполнения остальных жанров и книг по аналогии
+    
+    // Пример заполнения каталога с помощью цикла
+    for (int i = 0; i < 10; i++) {
+        ArrayList<String> genre = new ArrayList<>();
+        genre.add("Жанр " + i);
+        for (int j = 0; j < 5; j++) {
+            genre.add("Книга " + (j + 1));
+        }
+        catalog.add(genre);
+    }
+}
